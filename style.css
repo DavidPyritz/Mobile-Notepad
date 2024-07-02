@@ -1,0 +1,248 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.seeBackground {
+    background-image: url('img/geeks-2894621_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.myposts {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.postArea {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+}
+
+.write-notice {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 50px;
+    min-height: 200px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 40% 5% 25% 20% / 15% 5% 20% 5%;
+    border-width: 0.5px;
+    border: 10px inset #8C562D;
+    background-color: #BE9863;
+}
+
+textarea {
+    resize: none;
+    max-height: 250px;
+    min-height: 80px;
+    padding: 32px;
+    border: 10px inset #8C562D;
+    border-radius: 40% 5% 25% 20% / 15% 5% 20% 5%;
+    background-color: #965830;
+    font-size: 16px;
+    color: rgb(245, 210, 10);
+    font-family: "Roboto", sans-serif;
+}
+
+button {
+    padding: 4px;
+    width: 70%;
+    border-radius: 80% 10% 50% 40% / 30% 10% 40% 10%;
+    border: 10px inset #8C562D;
+    background-color: #BE9863;
+    font-size: 16px;
+    color: rgb(245, 210, 10);
+    font-family: "Roboto", sans-serif;
+}
+
+input,
+h5 {
+    padding: 4px;
+    width: 60%;
+    border-radius: 80% 10% 50% 40% / 30% 10% 40% 10%;
+    border: 10px inset #8C562D;
+    background-color: #BE9863;
+    font-size: 16px;
+    color: rgb(245, 210, 10);
+}
+
+textarea::placeholder {
+    font-size: 16px;
+    color: rgb(245, 210, 10);
+    text-align: center;
+}
+
+input::placeholder {
+    font-size: 16px;
+    color: rgb(245, 210, 10);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+button:hover,
+textarea:hover,
+input:hover,
+h5:hover {
+    transition: 125ms;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.post {
+    width: 250px;
+    padding: 24px;
+    display: flex;
+    max-height: 300px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 40% 5% 25% 20% / 15% 5% 20% 5%;
+    border: 10px inset #8C562D;
+    background-color: #BE9863;
+    font-size: 18px;
+    color: rgb(245, 210, 10);
+}
+
+.postTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    min-width: 90%;
+}
+
+.trashTitleStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    min-width: 90%;
+}
+
+.textAreaNewNote {
+    scrollbar-width: none;
+    color: rgb(245, 210, 10);
+    font-family: "Roboto", sans-serif;
+}
+
+h5 {
+    color: rgb(245, 210, 10);
+}
+
+.iconStyle a {
+    color: black;
+    font-size: 32px;
+}
+
+.iconStyleTrash {
+    color: rgb(245, 210, 10);
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.iconField {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.trashStyle {
+
+    font-size: 18px;
+    color: rgb(245, 210, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    flex-wrap: wrap;
+    max-height: 85vh;
+    overflow-y: scroll;
+}
+
+.footer {
+    margin-top: 24px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+    gap: 10px;
+    color: rgb(245, 210, 10);
+    font-weight: 400;
+}
+
+a {
+    color: rgb(245, 210, 10);
+    text-decoration: none;
+}
+
+a:hover {
+    color: greenyellow;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width: 1000px) {
+    .main-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .write-notice {
+        width: 120px;
+    }
+
+    .post {
+        padding: 0px;
+        width: 230px;
+        max-height: 250px;
+        min-height: 250px;
+    }
+
+    textarea {
+        padding: 0px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.d-none {
+    display: none
+}
